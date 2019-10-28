@@ -31,11 +31,9 @@
       p = document.createElement('p');
       words.appendChild(p)
     }
-
-
   })
 
-  recognition.addEventListener('end', recognition); //to prevent the stop recognition once you stop talking
+  recognition.addEventListener('end', recognition.start); //to prevent the stop recognition once you stop talking
   recognition.start();
 
 </script>
